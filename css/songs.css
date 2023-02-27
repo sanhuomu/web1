@@ -1,0 +1,226 @@
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	background:url(../image/bg-song.jpg) no-repeat fixed;
+    background-size:cover;
+}
+/*歌曲界面*/
+.box1{
+	width:1170px;
+	height:auto;
+	margin:20px 30px 10px 330px;
+	position:relative;
+}
+.box1 h1{
+	display:flex;
+	flex-direction:row;
+	align-items:center;	
+	color:#FFF;
+	font-family:"华文楷体";
+	float:left;
+	margin:10px;
+}
+.box2{
+	width:1100px;
+	height:auto;
+	margin:20px 30px;
+	position:relative;
+}
+.box2 div{
+	height:250px;
+	width:200px;
+	margin:20px 30px;
+	border:1px solid #6699cc;
+	background:#336699;
+	text-align:center;
+	display:inline-block;
+}
+.box2 div img{
+	width:200px;
+}
+.box2 div p{
+	color:#FFF;
+	font-family:"微软雅黑";
+	font-weight:bold;
+	text-align:center;	
+}
+.box2 div a{
+	display: block;
+    text-align: center;
+} 
+.box2 div a img{
+	width:30px;
+}
+.head{
+	position:fixed;
+	bottom: 0;
+	left: 0;
+	top:0;
+	height:auto;
+ 	width:290px;
+ 	background-color:#336699;
+ 	padding: 20px 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+ 	border-top: 1px solid #6699cc;
+	border-right: 1px solid #6699cc;
+	}
+.head img{
+	width:200px;
+ 	height: auto;
+	display: block;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+.head p{
+	color:#FFF;
+	font-family:"华文楷体";
+	font-size:18px;
+	line-height:30px;
+	margin:10px;
+}
+.player {
+	position:fixed;
+	bottom: 0;
+	left: 0;
+	width:290px;
+ 	background-color:#336699;
+	padding: 20px 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	border-top: 1px solid #6699cc;
+	border-right: 1px solid #6699cc;
+}
+.player__cover {
+	width: 100%;
+	 max-width: 90px;
+}
+.player__cover img {
+ 	width: 100%;
+ 	height: auto;
+	display: block;
+	border-radius: 12px;
+	margin-bottom: 10px;
+}
+.player__track {
+ 	font-size: 16px;
+ 	line-height: 24px;
+	display: block;
+ 	width: 100%;
+  	text-align: center;
+ 	font-weight: 400;
+	color: #c0c0c0;
+	margin-bottom: 10px;
+ 	white-space: nowrap;
+	overflow: hidden;
+ 	text-overflow: ellipsis;
+	word-wrap: break-word;
+}
+.player__track b {
+	font-weight: 600;
+	color: #fff;
+}
+.player__content {
+	width: 100%;
+}
+.top-header {
+	padding: 2em 0;
+}
+.navigation{
+	margin:0px 40px;
+}
+.logo h1 {
+    margin:0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#fff;
+}
+.logo h1 a{
+	text-decoration:none;
+	 color:#fff;
+}
+.logo span{
+    border: 7px solid #00a78e;
+    padding: 0px 14px;
+    font-size: 1.2em;
+    color: #fff;
+}
+.logo{
+	float:left;
+}
+.navigation-right{
+	float:right;
+}
+.navigation-right ul li{
+	display:inline-block;
+}
+.navigation-right ul li a{
+	color:#fff;
+    font-size:1em;
+    text-decoration: none;
+    padding:10px 0;
+	text-transform:uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+.navigation-right ul li.active a{
+	 color: #00a78e;
+}
+/*-- nav-hover --*/
+.link-effect-3 a {
+	padding: 10px 0;
+	margin: 0 12px;
+	color: #797878;
+	text-shadow: none;
+	position: relative;  
+    font-family: 'Open Sans', sans-serif;
+}
+.link-effect-3 a::before {
+	position: absolute;
+	top:0;
+	left:0;
+	overflow: hidden;
+	padding: 10px 0;
+	max-width: 0;
+	border-bottom: 3px solid #00a78e;
+    color: #00a78e;
+	content: attr(data-hover);
+	-webkit-transition: max-width 0.5s;
+	-moz-transition: max-width 0.5s;
+	transition: max-width 0.5s;
+}
+.link-effect-3 a:hover::before {
+	max-width: 100%;
+}
+/*底部*/
+.box3{
+	float:left;
+	padding:0;
+	width:100%;
+	height:auto;
+	color:#FFF;
+	text-align:center;
+}
+.box3 hr{
+	color:#999;
+	size:2px;
+	width:100%;
+}
+.box3 p{
+	display:inline-block;
+	margin:20px;
+	font-family:"华文琥珀";
+	font-size:16px;
+	color:#FFF;
+}
+.box3 a{
+	color:#FFF;
+	text-decoration:none;
+	font-size:20px;
+}

@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+}
+.box1{
+	background:url(../image/bg.jpg) no-repeat fixed;
+    background-size: cover;
+	width:100%;
+   	min-height:700px;
+	position:relative;
+}
+.top-header {
+	padding: 2em 0;
+}
+.navigation{
+	margin:20px;
+}
+.logo h1 {
+    margin:0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#fff;
+}
+.logo h1 a{
+	text-decoration:none;
+	 color:#fff;
+}
+.logo span{
+    border: 7px solid #00a78e;
+    padding: 0px 14px;
+    font-size: 1.2em;
+    color: #fff;
+}
+.logo{
+	float:left;
+}
+.navigation-right{
+	float:right;
+}
+.navigation-right ul li{
+	display:inline-block;
+}
+.navigation-right ul li a{
+	color:#fff;
+    font-size:1em;
+    text-decoration: none;
+    padding: 10px 0;
+	text-transform:uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+.navigation-right ul li.active a{
+	 color: #00a78e;
+}
+/*-- nav-hover --*/
+.link-effect-3 a {
+	padding: 10px 0;
+	margin: 0 12px;
+	color: #797878;
+	text-shadow: none;
+	position: relative;  
+    font-family: 'Open Sans', sans-serif;
+}
+.link-effect-3 a::before {
+	position: absolute;
+	top:0;
+	left:0;
+	overflow: hidden;
+	padding: 10px 0;
+	max-width: 0;
+	border-bottom: 3px solid #00a78e;
+    color: #00a78e;
+	content: attr(data-hover);
+	-webkit-transition: max-width 0.5s;
+	-moz-transition: max-width 0.5s;
+	transition: max-width 0.5s;
+}
+.link-effect-3 a:hover::before {
+	max-width: 100%;
+}
+/*介绍部分*/
+.about{
+	float:left;
+	padding:0;
+	background:url(../image/bg1.jpg) no-repeat fixed;
+	background-size:cover;
+	width:100%;
+	height:auto;
+}
+.about img{
+	border:#000 1px solid;
+}
+.about .img{
+	float:left;
+	margin:30px;
+	height:600px;
+	border:#000 1px solid;
+}
+.about h1,h2{
+	color:#FFF;
+	letter-spacing:5px;
+	text-align:center;
+	margin:10px;
+}
+.about p{
+	color:#FFF;
+	font-family:"华文楷体";
+	font-size:24px;
+	text-indent:2em;
+	line-height:30px;
+	margin:5px;
+}
+/*底部*/
+.box3{
+	float:left;
+	padding:0;
+	background:url(../image/bg1.jpg) no-repeat fixed;
+	background-size:cover;
+	width:100%;
+	height:auto;
+	color:#FFF;
+	text-align:center;
+}
+.box3 hr{
+	color:#999;
+	size:2px;
+	width:100%;
+}
+.box3 p{
+	display:inline-block;
+	margin:20px;
+	font-family:"华文琥珀";
+	font-size:16px;
+	color:#FFF;
+}
+.box3 a{
+	color:#FFF;
+	text-decoration:none;
+	font-size:20px;
+}

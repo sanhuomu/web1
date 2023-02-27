@@ -1,0 +1,155 @@
+/* CSS Document */
+
+body{
+	background:url(../image/bg-stage.jpg) no-repeat fixed;
+	background-size:cover;
+}
+/*舞台界面*/
+.box1{
+	width:1470px;
+	height:auto;
+	margin:10px 20px;
+	position:relative;
+}
+.box1 h1{
+	display:flex;
+	flex-direction:row;
+	align-items:center;	
+	color:#FFF;
+	font-family:"华文楷体";
+	float:left;
+	margin:30px;
+}
+.box2{
+	width:1400px;
+	height:auto;
+	margin:10px 30px;
+	position:relative;
+	float:left;
+}
+.box2 div{
+	width:400px;
+	height:300px;
+	margin:20px 30px;
+	border:1px solid #FFC;
+	text-align:center;
+	display:inline-block;
+	position: relative;
+}
+.box2 div img{
+	width:400px;
+}
+.box2 div p{
+	color:#FFF;
+	font-size:20px;
+	font-weight:bold;
+	text-align:center;
+	margin:10px;
+	display:inline-block;
+}
+.vid-time {
+	position: absolute;
+	bottom: 50px;
+	right: 0;
+	height: 21px;
+	line-height: 21px;
+	color: #FFFFFF;
+	font-size: 14px;
+	padding: 0 6px;
+	background: rgba(38, 38, 54, 0.9);
+}
+/*顶部*/
+.top-header {
+	padding: 2em 0;
+}
+.navigation{
+	margin:0px 40px;
+}
+.logo h1 {
+    margin:0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#fff;
+}
+.logo h1 a{
+	text-decoration:none;
+	 color:#fff;
+}
+.logo span{
+    border: 7px solid #00a78e;
+    padding: 0px 14px;
+    font-size: 1.2em;
+    color: #fff;
+}
+.logo{
+	float:left;
+}
+.navigation-right{
+	float:right;
+}
+.navigation-right ul li{
+	display:inline-block;
+}
+.navigation-right ul li a{
+	color:#fff;
+    font-size:1em;
+    text-decoration: none;
+    padding:10px 0;
+	text-transform:uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+.navigation-right ul li.active a{
+	 color: #00a78e;
+}
+/*-- nav-hover --*/
+.link-effect-3 a {
+	padding: 10px 0;
+	margin: 0 12px;
+	color: #797878;
+	text-shadow: none;
+	position: relative;  
+    font-family: 'Open Sans', sans-serif;
+}
+.link-effect-3 a::before {
+	position: absolute;
+	top:0;
+	left:0;
+	overflow: hidden;
+	padding: 10px 0;
+	max-width: 0;
+	border-bottom: 3px solid #00a78e;
+    color: #00a78e;
+	content: attr(data-hover);
+	-webkit-transition: max-width 0.5s;
+	-moz-transition: max-width 0.5s;
+	transition: max-width 0.5s;
+}
+.link-effect-3 a:hover::before {
+	max-width: 100%;
+}
+/*底部*/
+.box3{
+	float:left;
+	padding:0;
+	width:100%;
+	height:auto;
+	color:#FFF;
+	text-align:center;
+}
+.box3 hr{
+	color:#999;
+	size:2px;
+	width:100%;
+}
+.box3 p{
+	display:inline-block;
+	margin:20px;
+	font-family:"华文琥珀";
+	font-size:16px;
+	color:#FFF;
+}
+.box3 a{
+	color:#FFF;
+	text-decoration:none;
+	font-size:20px;
+}
